@@ -145,7 +145,7 @@ Intel I225-V 2.5Gb Ethernet
 | device-id                |   Data   | ``F2150000`` |
 
 > [!NOTE]
-> The **Intel I225-V** requires a special patch mentioned in [Kernel](https://github.com/Coopydood/OpenCore-Z490E-CometLake/?tab=readme-ov-file#Kernel).
+> The **Intel I225-V** requires a special patch mentioned in [Kernel](https://github.com/Coopydood/OpenCore-Z490E-CometLake/?tab=readme-ov-file#patches).
 
 <br>
 
