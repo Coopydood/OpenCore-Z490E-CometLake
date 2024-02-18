@@ -1,5 +1,8 @@
 # OpenCore-Z490E-CometLake
-OpenCore configuration for ASUS ROG STRIX Z490-E GAMING motherboard with i9-10900K. 
+OpenCore configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with i9-10900K. 
+
+<img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/af012dbc-dd39-474e-bb11-3f5ed0682cd3" alt="ultimate-macOS-KVM" width="1400"/>
+<p align="center"><i>macOS Sonoma running on native hardware.</i></p>
 
 <br>
 
@@ -64,7 +67,6 @@ Despite trying multiple different framebuffers and connection patches, I cannot 
 
 </ul>
 
-<br>
 
 ***
 
@@ -260,6 +262,11 @@ Drivers in use:
 - OpenRuntime
 - ResetNvramEntry
   
+***
+
+## Gallery
+
+<img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/ea637aa4-9c04-4e5c-99f7-8ff74ba71c7d" width="90%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/78172587-8f58-48dc-bffa-ed5a13c679f7" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/1c9cb80d-13c5-4b15-9446-29096b7ea5ef" width="45%"></img> 
 ***
 
 ## Disclaimer
