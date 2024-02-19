@@ -65,6 +65,11 @@ Again, as a Wi-Fi and Bluetooth reliant feature, unlocking with Apple Watch does
 <li><b>HDMI on Intel UHD 630 (iGPU)</b></li>
 Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU. 
 
+<br>
+
+<li><b>BIOS POSTs in "Safe Mode"</b></li>
+After booting macOS, the next reboot always caused the BIOS to POST in a "safe mode" with the message <code>The system has POSTed in safe mode.</code> displayed. This is because macOS tries to write to disallowed areas of the RTC. This was fixed easily, by using <a href=https://dortania.github.io/OpenCore-Post-Install/misc/rtc.html>this guide</a>.
+
 </ul>
 
 
@@ -111,7 +116,7 @@ SSDTs used:
 > [!IMPORTANT]
 > ``SSDT-GPU-DISABLE`` is a custom SSDT used to disable an **NVIDIA RTX 3090** graphics card. It should be removed if config is being used on a different system.
 >
-> ``SSDT-RX5700XT`` is an EXPERIMENTAL custom SSDT used to enhance the performance of an **AMD RX 5700 XT** graphics card. It should be removed if config is being used on a different system.
+> ``SSDT-RX5700XT`` is an *EXPERIMENTAL* custom SSDT used to enhance the performance of an **AMD RX 5700 XT** graphics card. It should be removed if config is being used on a different system.
   
 ***
 
