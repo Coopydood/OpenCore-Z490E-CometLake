@@ -106,9 +106,12 @@ SSDTs used:
 - SSDT-GPU-DISABLE
 - SSDT-PLUG-DRTNIA
 - SSDT-RHUB
+- SSDT-RX5700XT [⎋](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
 > [!IMPORTANT]
 > ``SSDT-GPU-DISABLE`` is a custom SSDT used to disable an **NVIDIA RTX 3090** graphics card. It should be removed if config is being used on a different system.
+>
+> ``SSDT-RX5700XT`` is an EXPERIMENTAL custom SSDT used to enhance the performance of an **AMD RX 5700 XT** graphics card. It should be removed if config is being used on a different system.
   
 ***
 
