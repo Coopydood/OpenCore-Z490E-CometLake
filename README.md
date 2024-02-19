@@ -1,4 +1,4 @@
-# OpenCore-Z490E-CometLake
+# OpenCore Z490-E (Comet Lake)
 OpenCore configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with i9-10900K. 
 
 <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/af012dbc-dd39-474e-bb11-3f5ed0682cd3" alt="ultimate-macOS-KVM" width="1400"/>
