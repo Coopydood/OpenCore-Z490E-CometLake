@@ -46,6 +46,14 @@
 				<key>Path</key>
 				<string>SSDT-RHUB.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-RX5700XT.aml</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-RX5700XT.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
