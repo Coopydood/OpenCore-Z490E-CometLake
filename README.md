@@ -1,5 +1,5 @@
 # OpenCore Z490-E (Comet Lake)
-OpenCore configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with i9-10900K. 
+OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with an Intel Core i9-10900K. 
 
 <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/af012dbc-dd39-474e-bb11-3f5ed0682cd3" alt="ultimate-macOS-KVM" width="1400"/>
 <p align="center"><i>macOS Sonoma running on native hardware.</i></p>
@@ -92,7 +92,7 @@ The specs of my main system that the OpenCore configuration targets.
 
 ## SMBIOS
 
-``iMac20,2``
+### iMac20,2
 
 Due to the system having a 10-core i9-10900K, the CPU model is similar to the one found in an **iMac 5K 27-inch (i9, 2020)**, with a model identifier of ``iMac20,2``.
 
