@@ -18,7 +18,7 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 - [x] iGPU (UHD 630)
 - [x] NVMe drives
 - [x] SATA drives
-- [ ] USB 3.1 (XHCI) - **USB MAP COMING SOON!**
+- [x] USB 3.1 (XHCI)
 - [x] Ethernet
 - [ ] Wi-Fi
 - [ ] Bluetooth
@@ -84,8 +84,8 @@ The specs of my main system that the OpenCore configuration targets.
 | **CPU**         |                      Intel Core i9-10900K                     |
 | **Chipset**     |                             Z490-E                            |
 | **Generation**  |                           Comet Lake                          |
-| **Memory**      |                       64GB DDR4 3200MHz                       |
-| **Storage**     |                     200GB WD Blue NVMe M.2                    |
+| **Memory**      |                       64 GB DDR4 3200MHz                       |
+| **Storage**     |                     500 GB WD Blue NVMe M.2                    |
 | **GPU**         | Intel UHD 630<br>AMD Radeon RX 5700 XT<br>~~NVIDIA GTX 3090~~ * |
 | **NIC**         |                  Intel I225-V 2.5Gb Ethernet                  |
 
@@ -274,7 +274,8 @@ Drivers in use:
 
 ## Gallery
 
-<img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/ea637aa4-9c04-4e5c-99f7-8ff74ba71c7d" width="90%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/78172587-8f58-48dc-bffa-ed5a13c679f7" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/1c9cb80d-13c5-4b15-9446-29096b7ea5ef" width="45%"></img> 
+<img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/9dd5dda0-92c3-4cc7-a7e4-3aab714671db" width="30%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4694291b-adcd-4847-99e2-a4f89c9c1ac9" width="60%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/569407bd-0893-4974-82f0-ff669d317783" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/c3ec115d-fe2c-4382-9fa3-d73d3c10cfd2" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4ef63542-a628-4a97-a598-7474bf151414" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/7fd1683a-b389-4d5c-a8c6-106279a50625" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/bc47bf2e-0879-4584-bab1-f039f38f73c0" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/85bd9aee-1a09-4a16-b121-5bc96f21becd" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/85dd1971-efb5-47f0-a73b-459099d383bb" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/d455d5f8-830e-4fb5-9f08-30d65fcce1db" width="45%"></img>
+
 ***
 
 ## Disclaimer
