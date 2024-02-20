@@ -18,7 +18,7 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 - [x] iGPU (UHD 630)
 - [x] NVMe drives
 - [x] SATA drives
-- [x] USB 3.1 (XHCI)
+- [ ] USB 3.1 (XHCI) - **USB MAP COMING SOON!**
 - [x] Ethernet
 - [ ] Wi-Fi
 - [ ] Bluetooth
