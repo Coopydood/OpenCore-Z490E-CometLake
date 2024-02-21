@@ -191,6 +191,10 @@ Kexts used:
 - SMCSuperIO
 - FeatureUnlock
 - RTCMemoryFixup
+- Z490E_USBMap
+
+> [!NOTE]
+> ``Z490E_USBMap.kext`` is a custom kext containing the USB mappings of my ASUS ROG STRIX Z490-E GAMING motherboard ports - your mileage may vary!
 
 ### Patches
 
