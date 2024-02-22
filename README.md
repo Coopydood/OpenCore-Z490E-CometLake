@@ -32,7 +32,7 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 - [x] FaceTime
 - [x] Unlock with Apple Watch
 - [x] QE/CI graphics acceleration
-- [x] Metal support
+- [x] Metal support (Metal 3)
 - [x] Temperature sensors
 - [x] Sleep / Wake
 - [x] RTC (protection)
