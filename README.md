@@ -47,6 +47,11 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 ## Problems
 
 <ul>
+<li><b>HDMI on Intel UHD 630 (iGPU)</b></li>
+Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU.
+
+<br><br>
+
 <li><b><s>Wi-Fi and Bluetooth</s> ‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b></li>
 <s>Having worked on my virtualised instances of macOS Catalina and macOS Monterey, I'm still unable to get stable Wi-Fi or Bluetooth support on macOS Sonoma with <code>AirportItlwm.kext</code>. Wi-Fi networks will often connect but crash the entire system after a minute or two. Strangely, Wi-Fi worked flawlessly in macOS Recovery, and I even used it to install macOS as I had not patched the I225-V ethernet yet.</s>
 
@@ -72,11 +77,6 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 > This was fixed by two seperate patches;
 > - Wi-Fi and Bluetooth fixed
 > - Secure Boot model changed from ``Default`` to ``j185f`` 
-
-<br>
-
-<li><b>HDMI on Intel UHD 630 (iGPU)</b></li>
-Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU. </s>
 
 <br>
 
