@@ -20,17 +20,17 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 - [x] SATA drives
 - [x] USB 3.1 (XHCI)
 - [x] Ethernet
-- [ ] Wi-Fi
-- [ ] Bluetooth
+- [x] Wi-Fi
+- [x] Bluetooth
 - [x] Camera
 - [x] Sound
   
 ### Software
 
-- [ ] AirDrop
+- [x] AirDrop
 - [x] iMessage
 - [x] FaceTime
-- [ ] Unlock with Apple Watch
+- [x] Unlock with Apple Watch
 - [x] QE/CI graphics acceleration
 - [x] Metal support
 - [x] Temperature sensors
@@ -47,28 +47,44 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 ## Problems
 
 <ul>
-<li><b>Wi-Fi and Bluetooth</b></li>
-Having worked on my virtualised instances of macOS Catalina and macOS Monterey, I'm still unable to get stable Wi-Fi or Bluetooth support on macOS Sonoma with <code>AirportItlwm.kext</code>. Wi-Fi networks will often connect but crash the entire system after a minute or two. Strangely, Wi-Fi worked flawlessly in macOS Recovery, and I even used it to install macOS as I had not patched the I225-V ethernet yet.
+<li><b><s>Wi-Fi and Bluetooth</s> ‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b></li>
+<s>Having worked on my virtualised instances of macOS Catalina and macOS Monterey, I'm still unable to get stable Wi-Fi or Bluetooth support on macOS Sonoma with <code>AirportItlwm.kext</code>. Wi-Fi networks will often connect but crash the entire system after a minute or two. Strangely, Wi-Fi worked flawlessly in macOS Recovery, and I even used it to install macOS as I had not patched the I225-V ethernet yet.</s>
+
+> [!TIP]
+> This was fixed by using the debug (alpha) version of ``AirportItlwm.kext``.
 
 <br>
 
-<li><b>AirDrop</b></li>
-As this relies on Wi-Fi and Bluetooth connectivity, while shown as available throughout the system, it sadly does not work at this time. As a workaround, I have been using <a href="https://github.com/localsend/localsend">LocalSend</a>, a cross-platform alternative.
+<li><b><s>AirDrop </s>‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b></li>
+<s>As this relies on Wi-Fi and Bluetooth connectivity, while shown as available throughout the system, it sadly does not work at this time. As a workaround, I have been using <a href="https://github.com/localsend/localsend">LocalSend</a>, a cross-platform alternative.</s>
+
+> [!TIP]
+> This was fixed by two seperate patches;
+> - Wi-Fi and Bluetooth fixed
+> - Secure Boot model changed from ``Default`` to ``j185f`` 
 
 <br>
 
-<li><b>Unlock with Apple Watch</b></li>
-Again, as a Wi-Fi and Bluetooth reliant feature, unlocking with Apple Watch doesn't work either right now.
+<li><b><s>Unlock with Apple Watch</s>‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b></li>
+<s>Again, as a Wi-Fi and Bluetooth reliant feature, unlocking with Apple Watch doesn't work either right now.</s>
+
+> [!TIP]
+> This was fixed by two seperate patches;
+> - Wi-Fi and Bluetooth fixed
+> - Secure Boot model changed from ``Default`` to ``j185f`` 
 
 <br>
 
 <li><b>HDMI on Intel UHD 630 (iGPU)</b></li>
-Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU. 
+Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU. </s>
 
 <br>
 
-<li><b>BIOS POSTs in "Safe Mode"</b></li>
-After booting macOS, the next reboot always caused the BIOS to POST in a "safe mode" with the message <code>The system has POSTed in safe mode.</code> displayed. This is because macOS tries to write to disallowed areas of the RTC. This was fixed easily, by using <a href=https://dortania.github.io/OpenCore-Post-Install/misc/rtc.html>this guide</a>.
+<li><b><s>BIOS POSTs in "Safe Mode"</s>‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b> </li>
+<s>After booting macOS, the next reboot always caused the BIOS to POST in a "safe mode" with the message <code>The system has POSTed in safe mode.</code> displayed. This is because macOS tries to write to disallowed areas of the RTC.</s> 
+
+> [!TIP]
+> This was fixed by using [using this guide](https://dortania.github.io/OpenCore-Post-Install/misc/rtc.html).
 
 </ul>
 
@@ -82,7 +98,7 @@ The specs of my main system that the OpenCore configuration targets.
 | **Motherboard** |                  ASUS ROG STRIX Z490-E GAMING                 |
 |-----------------|:-------------------------------------------------------------:|
 | **CPU**         |                      Intel Core i9-10900K                     |
-| **Chipset**     |                             Z490-E                            |
+| **Chipset**     |                             Z490                            |
 | **Generation**  |                           Comet Lake                          |
 | **Memory**      |                       64 GB DDR4 3200MHz                       |
 | **Storage**     |                     500 GB WD Blue NVMe M.2                    |
@@ -91,15 +107,6 @@ The specs of my main system that the OpenCore configuration targets.
 
 > [!NOTE]
 > The system contains an **NVIDIA RTX 3090** graphics card, but it has been intentionally disabled through a custom SSDT (``SSDT-GPU-DISABLE.aml``).
-
-
-***
-
-## SMBIOS
-
-### iMac20,2
-
-Due to the system having a 10-core i9-10900K, the CPU model is similar to the one found in an **iMac 5K 27-inch (i9, 2020)**, with a model identifier of ``iMac20,2``.
 
 ***
 
@@ -221,9 +228,12 @@ Intel I225-V 2.5Gb Ethernet
 
 ## Security
 
-**SecureBootModel 》** Default
+**SecureBootModel 》** j185f
 
 **Vault 》** Optional
+
+> [!NOTE]
+> The secure boot model ``j185`` corresponds to an ``iMac20,2`` from August 2020.
 
 ***
 
@@ -263,6 +273,16 @@ Contents stored in NVRAM.
 | StartupMute               |   Data   |                                     ``00``                                     |
 
 ***
+
+## SMBIOS
+
+### iMac20,2
+
+Due to the system having a 10-core i9-10900K, the CPU model is similar to the one found in an **iMac 5K 27-inch (i9, 2020)**, with a model identifier of ``iMac20,2``.
+
+***
+
+
 
 ## UEFI
 
