@@ -102,7 +102,7 @@ The specs of my main system that the OpenCore configuration targets.
 | **Generation**  |                           Comet Lake                          |
 | **Memory**      |                       64 GB DDR4 3200MHz                       |
 | **Storage**     |                     500 GB WD Blue NVMe M.2                    |
-| **GPU**         | Intel UHD 630<br>AMD Radeon RX 5700 XT<br>~~NVIDIA GTX 3090~~ * |
+| **GPU**         | Intel UHD 630<br>AMD Radeon RX 5700 XT<br>~~NVIDIA RTX 3090~~ * |
 | **NIC**         |                  Intel I225-V 2.5Gb Ethernet                  |
 
 > [!NOTE]
