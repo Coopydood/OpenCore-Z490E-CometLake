@@ -6,6 +6,10 @@ OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING
 
 <br>
 
+You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-Template) to make your own writeup for your setup!
+
+<br>
+
 ## What works?
 
 ### macOS
