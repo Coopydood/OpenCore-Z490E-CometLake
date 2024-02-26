@@ -53,6 +53,7 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 <ul>
 <li><b>HDMI on Intel UHD 630 (iGPU)</b></li>
 Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU.
+As a result, the iGPU is being used for internal compute only - which works really well. I do still intend to find the fix though!
 
 <br><br>
 
