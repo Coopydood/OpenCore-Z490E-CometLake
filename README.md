@@ -12,14 +12,6 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 
 ***
 
-## macOS
-
-<img align="left" width="100" height="100" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/aa49b5ba-6cca-4dab-bcfc-6bf21909e738">
-
-<h3>macOS Sonoma<br><sub>14.4.1</sub></h3>
-
-This is the version of macOS that this OpenCore configuration currently targets.<br>
-
 ## OpenCore
 
 <img align="left" width="100" height="100" src="https://dortania.github.io/docs/latest/Logos/Logo.png">
@@ -28,6 +20,15 @@ This is the version of macOS that this OpenCore configuration currently targets.
 
 This is the version of OpenCore used, including bundled files. The included ``config.plist`` targets this version.
 <br>
+
+
+## macOS
+
+<img align="left" width="90" height="90" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/aa49b5ba-6cca-4dab-bcfc-6bf21909e738">
+
+<h3>macOS Sonoma<br><sub>14.4.1</sub></h3>
+
+This is the version of macOS that this OpenCore configuration currently targets.<br>
 
 ***
 
