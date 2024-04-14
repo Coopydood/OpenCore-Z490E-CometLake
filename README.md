@@ -313,8 +313,6 @@ Due to the system having a 10-core i9-10900K, the CPU model is similar to the on
 
 ***
 
-
-
 ## UEFI
 
 Drivers in use:
@@ -325,6 +323,64 @@ Drivers in use:
 - OpenRuntime
 - ResetNvramEntry
   
+***
+
+## Post-Install Tweaks
+
+This is just a collection of my post-install tweaks I apply after installing macOS. They're not really related to OpenCore or the overall functionality of the configuration.
+
+<details><summary><h4>Dark Menu Bar and Dock</h4></summary>
+
+Okay, so I'm a bit of a macOS boomer. Having used macOS since long before Mojave's *dark mode*, I'm accustomed to the regular light appearance of the windows - but I always enabled the "Dark menu bar and dock" option as I loved the look. While I still like dark mode (and use it on iOS), the hybrid light/dark mode on macOS is still my favourite!
+
+The following commands restore that functionality:
+
+**Window Server**
+```zsh
+defaults write -g NSRequiresAquaSystemAppearance -bool Yes
+```
+
+**Notification Centre**
+```zsh
+defaults write com.apple.notificationcenterui NSRequiresAquaSystemAppearance -bool No
+```
+
+**Control Centre**
+```zsh
+defaults write com.apple.controlcenterui NSRequiresAquaSystemAppearance -bool No
+```
+</details>
+
+<details><summary><h4>Show Hidden Files</h4></summary>
+
+Does what it says on the tin. Shows all files, including hidden ones, in the Finder.
+
+```zsh
+defaults write com.apple.Finder AppleShowAllFiles YES
+killall Finder
+```
+</details>
+
+<details><summary><h4>AirDrop over Ethernet</h4></summary>
+
+Makes AirDrop scan Ethernet too!
+
+```zsh
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+killall Finder
+```
+</details>
+
+<details><summary><h4>Frosted Glass Terminal Theme</h4></summary>
+
+Some macOS eye candy.
+
+[**Download**]()
+
+Import through Terminal's preferences.
+</details>
+
+
 ***
 
 ## Gallery
