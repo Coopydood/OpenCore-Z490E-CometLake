@@ -336,17 +336,17 @@ Okay, so I'm a bit of a macOS boomer. Having used macOS since long before Mojave
 The following commands restore that functionality:
 
 **Window Server**
-```zsh
+```sh
 defaults write -g NSRequiresAquaSystemAppearance -bool Yes
 ```
 
 **Notification Centre**
-```zsh
+```sh
 defaults write com.apple.notificationcenterui NSRequiresAquaSystemAppearance -bool No
 ```
 
 **Control Centre**
-```zsh
+```sh
 defaults write com.apple.controlcenterui NSRequiresAquaSystemAppearance -bool No
 ```
 </details>
@@ -355,7 +355,7 @@ defaults write com.apple.controlcenterui NSRequiresAquaSystemAppearance -bool No
 
 Does what it says on the tin. Shows all files, including hidden ones, in the Finder.
 
-```zsh
+```sh
 defaults write com.apple.Finder AppleShowAllFiles YES
 killall Finder
 ```
@@ -365,7 +365,7 @@ killall Finder
 
 Makes AirDrop scan Ethernet too!
 
-```zsh
+```sh
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 killall Finder
 ```
@@ -375,7 +375,9 @@ killall Finder
 
 Some macOS eye candy.
 
-[**Download**]()
+```sh
+curl -OL https://raw.githubusercontent.com/Coopydood/OpenCore-Z490E-CometLake/main/EXTRAS/HyperTerm.terminal
+```
 
 Import through Terminal's preferences.
 </details>
