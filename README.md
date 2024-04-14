@@ -10,6 +10,17 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 
 <br>
 
+***
+
+<img align="left" width="100" height="100" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/aa49b5ba-6cca-4dab-bcfc-6bf21909e738">
+
+<h3>macOS Sonoma<br><sub>14.4.1</sub></h3>
+
+This is the version of macOS that this OpenCore configuration currently targets.<br><br>
+
+***
+
+
 ## What works?
 
 ### macOS
@@ -56,6 +67,9 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU.
 As a result, the iGPU is being used for internal compute only - which works really well. I do still intend to find the fix though!
 
+> [!NOTE]
+> The ``DeviceProperties`` for the UHD 630 iGPU has been updated to support Metal 3!
+> 
 <br><br>
 
 <li><b><s>Wi-Fi and Bluetooth</s> ‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b></li>
@@ -145,15 +159,14 @@ Intel UHD 630 Graphics
 | **Key**                  | **Type** |   **Value**  |
 |--------------------------|:--------:|:------------:|
 | AAPL,ig-platform-id      |   Data   | ``0000923E`` |
-| device-id                |   Data   | ``923E7000`` |
-| framebuffer-fbmem        |   Data   | ``00009000`` |
+| device-id                |   Data   | ``9B3E0000`` |
+| enable-metal             |   Data   | ``01000000`` |
 | framebuffer-patch-enable |   Data   | ``01000000`` |
 | framebuffer-stolenmem    |   Data   | ``00003001`` |
-| framebuffer-unifiedmem   |   Data   | ``00000080`` |
-| hda-gfx                  |  String  |   onboard-1  |
+| igfxfw                   |   Data   | ``02000000`` |
 
 > [!WARNING]
-> The current configuration of the **Intel UHD 630** is not stable and is still being tweaked.
+> The current configuration of the **Intel UHD 630** is ***headless*** and isn't used with any displays.
 
 <br>
 
@@ -271,7 +284,7 @@ Contents stored in NVRAM.
 |---------------------------|:--------:|:------------------------------------------------------------------------------:|
 | ForceDisplayRotationInEFI |  Number  |                                        0                                       |
 | SystemAudioVolume         |   Data   |                                     ``46``                                     |
-| boot-args                 |  String  | -v keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 |
+| boot-args                 |  String  | keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 |
 | csr-active-config         |   Data   |                                  ``00000000``                                  |
 | prev-lang-diags:kbd       |   Data   |                                 ``656E2D47 42``                                |
 | prev-lang:kbd             |   Data   |                               ``656E2D47 423A32``                              |
@@ -304,7 +317,7 @@ Drivers in use:
 
 ## Gallery
 
-<img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/9dd5dda0-92c3-4cc7-a7e4-3aab714671db" width="30%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4694291b-adcd-4847-99e2-a4f89c9c1ac9" width="60%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/569407bd-0893-4974-82f0-ff669d317783" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/c3ec115d-fe2c-4382-9fa3-d73d3c10cfd2" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4ef63542-a628-4a97-a598-7474bf151414" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/7fd1683a-b389-4d5c-a8c6-106279a50625" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/bc47bf2e-0879-4584-bab1-f039f38f73c0" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/85bd9aee-1a09-4a16-b121-5bc96f21becd" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/85dd1971-efb5-47f0-a73b-459099d383bb" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/d455d5f8-830e-4fb5-9f08-30d65fcce1db" width="45%"></img>
+<img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/9dd5dda0-92c3-4cc7-a7e4-3aab714671db" width="30%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4694291b-adcd-4847-99e2-a4f89c9c1ac9" width="60%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/569407bd-0893-4974-82f0-ff669d317783" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/c3ec115d-fe2c-4382-9fa3-d73d3c10cfd2" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4ef63542-a628-4a97-a598-7474bf151414" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/7fd1683a-b389-4d5c-a8c6-106279a50625" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/bc47bf2e-0879-4584-bab1-f039f38f73c0" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/85bd9aee-1a09-4a16-b121-5bc96f21becd" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/93dce6d8-e1f4-49cb-ad86-adf82a3209a7" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/c5dde7cc-2e73-4833-882f-ab86ab4fbf33" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/85dd1971-efb5-47f0-a73b-459099d383bb" width="45%"></img> <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/d455d5f8-830e-4fb5-9f08-30d65fcce1db" width="45%"></img>
 
 ***
 

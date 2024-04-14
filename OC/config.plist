@@ -250,7 +250,7 @@
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>ResizeAppleGpuBars</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>SetupVirtualMap</key>
 			<false/>
 			<key>SignalAppleOS</key>
@@ -263,22 +263,44 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key># AAPL,slot-name</key>
+				<string>Internal@0,1,1/0,0/0,0/0,0</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x1)</key>
+			<dict>
+				<key># AAPL,slot-name</key>
+				<string>Internal@0,1,1/0,0/0,0/0,1</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key># AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key># OTHER</key>
+				<data>BwCbPg==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AACSPg==</data>
 				<key>device-id</key>
-				<data>kj4AAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
+				<data>mz4AAA==</data>
+				<key>enable-metal</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<key>igfxfw</key>
+				<data>AgAAAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 630</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
 			<dict>
@@ -542,7 +564,7 @@
 				<key>Comment</key>
 				<string>FeatureUnlock.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/FeatureUnlock</string>
 				<key>MaxKernel</key>
@@ -558,7 +580,7 @@
 				<key>BundlePath</key>
 				<string>RTCMemoryFixup.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>RTCMemoryFixup.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1078,7 +1100,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
@@ -1530,10 +1552,8 @@
 			<dict>
 				<key>ForceDisplayRotationInEFI</key>
 				<integer>0</integer>
-				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0</string>
+				<string>keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang-diags:kbd</key>
@@ -1544,6 +1564,8 @@
 				<string>No</string>
 				<key>StartupMute</key>
 				<data>AA==</data>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1630,9 +1652,9 @@
 			<key>SystemProductName</key>
 			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C60MP046M</string>
+			<string>XXXXXXXXXXXXXX</string>
 			<key>SystemUUID</key>
-			<string>30761C93-D2C9-4EBF-8B57-B5028BCB4692</string>
+			<string>XXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -1641,11 +1663,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>00000000</string>
+			<string>XXXXXXXXXXXXXX</string>
 			<key>ProcessorType</key>
 			<integer>4105</integer>
 			<key>ROM</key>
-			<data>AAAAAA==</data>
+			<data>AA==</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1653,14 +1675,14 @@
 			<key>SystemProductName</key>
 			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>00000000</string>
+			<string>XXXXXXXXXXXXXX</string>
 			<key>SystemUUID</key>
-			<string>00000000</string>
+			<string>XXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
-			<string>00000000</string>
+			<string>Mac-AF89B6D9451A490B</string>
 			<key>FirmwareFeatures</key>
 			<data>ZvCz/wgAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
@@ -1668,68 +1690,11 @@
 			<key>MLB</key>
 			<string>C02005701QX0000JA</string>
 			<key>ROM</key>
-			<data>AAAAAA==</data>
+			<data>AA==</data>
 			<key>SystemSerialNumber</key>
-			<string>00000000</string>
+			<string>XXXXXXXXXXXXXX</string>
 			<key>SystemUUID</key>
-			<string>00000000</string>
-		</dict>
-		<key>SMBIOS</key>
-		<dict>
-			<key>BIOSReleaseDate</key>
-			<string>10/05/2023</string>
-			<key>BIOSVendor</key>
-			<string></string>
-			<key>BIOSVersion</key>
-			<string>2020.41.1.0.0</string>
-			<key>BoardAssetTag</key>
-			<string>Base Board Asset Tag</string>
-			<key>BoardLocationInChassis</key>
-			<string>Part Component</string>
-			<key>BoardManufacturer</key>
-			<string></string>
-			<key>BoardProduct</key>
-			<string>00000000</string>
-			<key>BoardSerialNumber</key>
-			<string>00000000</string>
-			<key>BoardType</key>
-			<integer>10</integer>
-			<key>BoardVersion</key>
-			<string>iMac20,2</string>
-			<key>ChassisAssetTag</key>
-			<string>Asset Tag#</string>
-			<key>ChassisManufacturer</key>
-			<string></string>
-			<key>ChassisSerialNumber</key>
-			<string>00000000</string>
-			<key>ChassisType</key>
-			<integer>13</integer>
-			<key>ChassisVersion</key>
-			<string>00000000</string>
-			<key>FirmwareFeatures</key>
-			<data>ZvCz/wgAAAA=</data>
-			<key>FirmwareFeaturesMask</key>
-			<data>/////wgAAAA=</data>
-			<key>PlatformFeature</key>
-			<integer>32</integer>
-			<key>ProcessorType</key>
-			<integer>4105</integer>
-			<key>SmcVersion</key>
-			<data></data>
-			<key>SystemFamily</key>
-			<string>iMac</string>
-			<key>SystemManufacturer</key>
-			<string></string>
-			<key>SystemProductName</key>
-			<string>iMac20,2</string>
-			<key>SystemSKUNumber</key>
-			<string>System SKU#</string>
-			<key>SystemSerialNumber</key>
-			<string>00000000</string>
-			<key>SystemUUID</key>
-			<string>00000000</string>
-			<key>SystemVersion</key>
-			<string>1.0</string>
+			<string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1920,13 +1885,13 @@
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectGraphicsOnConnect</key>
-			<true/>
+			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>Resolution</key>
-			<string>Max</string>
+			<string></string>
 			<key>SanitiseClearScreen</key>
 			<false/>
 			<key>TextRenderer</key>
