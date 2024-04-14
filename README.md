@@ -361,6 +361,15 @@ killall Finder
 ```
 </details>
 
+<details><summary><h4>Show GPU Tab in Activity Monitor</h4></summary>
+
+Unhides the hidden sECrET GPU tab in macOS' Activity Monitor, helpful for seeing which apps are running on what GPU!
+
+```sh
+defaults write com.apple.ActivityMonitor ShowGPUTab -bool true
+```
+</details>
+
 <details><summary><h4>AirDrop over Ethernet</h4></summary>
 
 Makes AirDrop scan Ethernet too!
