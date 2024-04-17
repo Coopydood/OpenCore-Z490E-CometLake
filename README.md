@@ -15,7 +15,7 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 ## OpenCore
 
 <img align="left" width="100" height="100" src="https://dortania.github.io/docs/latest/Logos/Logo.png">
-
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=100 width=2 />
 <h3>OpenCore<br><sub>0.9.9</sub></h3>
 
 This is the version of OpenCore used, including bundled files. The included ``config.plist`` targets this version.
@@ -25,10 +25,21 @@ This is the version of OpenCore used, including bundled files. The included ``co
 ## macOS
 
 <img align="left" width="90" height="90" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/aa49b5ba-6cca-4dab-bcfc-6bf21909e738">
-
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=360 width=2 />
 <h3>macOS Sonoma<br><sub>14.4.1</sub></h3>
 
-This is the version of macOS that this OpenCore configuration currently targets.<br>
+This is the version of macOS that this OpenCore configuration currently targets. Other versions of macOS that are compatible with are listed below.<br>
+
+#### Supported
+
+<img align="left" width="35" height="35" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4829ebb4-ce7f-4ecf-8309-d691c9361f6b"> 
+<h5>macOS Ventura</h5>
+<img align="left" width="35" height="35" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/7d341cce-4370-4430-b3d5-bf1868afe4a3"> 
+<h5>macOS Monterey</h5>
+<img align="left" width="35" height="35" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/79a7a051-0f5a-419e-8544-b51b1572d3b9"> 
+<h5>macOS Big Sur</h5>
+<img align="left" width="35" height="35" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/cd8029e8-c256-4295-9908-37809d64dcfe"> 
+<h5>macOS Catalina</h5><br>
 
 ***
 
@@ -38,6 +49,7 @@ This is the version of macOS that this OpenCore configuration currently targets.
 ### macOS
 
 - [x] macOS Sonoma
+- [x] macOS Catalina
 
 ### Hardware
 
