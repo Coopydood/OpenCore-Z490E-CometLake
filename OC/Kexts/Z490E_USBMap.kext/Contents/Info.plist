@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>iMac20,2-XHC</key>
+		<key>Z490E-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -102,18 +102,18 @@
 						BgAAAA==
 						</data>
 						<key>Comment</key>
-						<string>front_3_4</string>
+						<string>front_3+4</string>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>Comment</key>
+						<string>front_2</string>
 						<key>port</key>
 						<data>
 						BwAAAA==
 						</data>
-						<key>Comment</key>
-						<string>front_2</string>
 					</dict>
 					<key>HS08</key>
 					<dict>
