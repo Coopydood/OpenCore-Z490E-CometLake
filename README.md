@@ -361,6 +361,13 @@ defaults write com.apple.notificationcenterui NSRequiresAquaSystemAppearance -bo
 ```sh
 defaults write com.apple.controlcenterui NSRequiresAquaSystemAppearance -bool No
 ```
+
+**About This Mac + System Profiler**
+```sh
+defaults write com.apple.SystemProfiler.AboutExtension NSRequiresAquaSystemAppearance -bool No
+defaults write com.apple.SystemProfiler.AboutExtension NSRequiresAquaSystemAppearance -bool No
+```
+
 </details>
 
 <details><summary><h4>Show Hidden Files</h4></summary>
