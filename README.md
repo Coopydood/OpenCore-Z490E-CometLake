@@ -12,6 +12,47 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 
 ***
 
+## Motherboard
+
+<img align="left" height="150" src="https://dlcdnimgs.asus.com/websites/global/products/tcymjbjbhzloect5/img/z490/kv/hero.png">
+
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=180 width=2 />
+
+<h3>ASUS ROG STRIX Z490-E GAMING<br><sub><a href="https://rog.asus.com/uk/motherboards/rog-strix/rog-strix-z490-e-gaming-model/">Product Page</a></sub></h3>
+
+*"The ROG Strix Z490-E Gaming motherboard is designed to cope with the demands of 10th Generation Intel® Core™ processors, with boosted power delivery and an optimised cooling design providing more surface area for heat dissipation."*
+
+*<sub>Product description provided by ASUS.</sub>*
+<br>
+
+## BIOS
+
+<img align="left" width="120" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4670b456-040b-4915-bd5d-6ed63cb4b408">
+
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=280 width=2 />
+
+<h3>UEFI BIOS Utility<br><sub>Configuration</sub></h3>
+
+
+These are the BIOS settings used with this Hackintosh setup.
+
+<br>
+
+**SETTING:** `VALUE`
+<br>
+**SETTING:** `VALUE`
+<br>
+**SETTING:** `VALUE`
+<br>
+**SETTING:** `VALUE`
+<br>
+**SETTING:** `VALUE`
+
+
+<br>
+
+***
+
 ## OpenCore
 
 <img align="left" width="100" height="100" src="https://dortania.github.io/docs/latest/Logos/Logo.png">
