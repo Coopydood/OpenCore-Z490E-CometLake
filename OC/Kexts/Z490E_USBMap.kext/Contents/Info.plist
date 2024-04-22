@@ -44,7 +44,7 @@
 				<true/>
 				<key>port-count</key>
 				<data>
-				FgAAAA==
+				GAAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
@@ -56,12 +56,14 @@
 						<data>
 						AQAAAA==
 						</data>
+						<key>Comment</key>
+						<string>back_usb3_5</string>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>port</key>
+						<key>#port</key>
 						<data>
 						AgAAAA==
 						</data>
@@ -88,7 +90,7 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>port</key>
+						<key>#port</key>
 						<data>
 						BQAAAA==
 						</data>
@@ -96,59 +98,63 @@
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						BgAAAA==
 						</data>
 						<key>Comment</key>
-						<string>front_3+4</string>
+						<string>front_usb2_3+4</string>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>Comment</key>
-						<string>front_2</string>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						BwAAAA==
 						</data>
+						<key>Comment</key>
+						<string>front_usb2_2</string>
 					</dict>
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						CAAAAA==
 						</data>
 						<key>Comment</key>
-						<string>font_1</string>
+						<string>front_usb2_1</string>
 					</dict>
 					<key>HS09</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						CQAAAA==
 						</data>
+						<key>Comment</key>
+						<string>back_usb2_7</string>
 					</dict>
 					<key>HS10</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>#port</key>
+						<key>port</key>
 						<data>
 						CgAAAA==
 						</data>
+						<key>Comment</key>
+						<string>back_usb3_6</string>
 					</dict>
 					<key>HS11</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>port</key>
+						<integer>0</integer>
+						<key>#port</key>
 						<data>
 						CwAAAA==
 						</data>
@@ -161,15 +167,19 @@
 						<data>
 						DAAAAA==
 						</data>
+						<key>Comment</key>
+						<string>back_usb3_1</string>
 					</dict>
 					<key>HS13</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						DQAAAA==
 						</data>
+						<key>Comment</key>
+						<string>back_usb2_2+3+4</string>
 					</dict>
 					<key>HS14</key>
 					<dict>
@@ -225,7 +235,7 @@
 						EwAAAA==
 						</data>
 						<key>Comment</key>
-						<string>rear_usb3_2</string>
+						<string>back_usb3g2</string>
 					</dict>
 					<key>SS04</key>
 					<dict>
@@ -236,16 +246,18 @@
 						FAAAAA==
 						</data>
 						<key>Comment</key>
-						<string>rear_usbc</string>
+						<string>back_usbc</string>
 					</dict>
 					<key>SS05</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>#port</key>
+						<integer>10</integer>
+						<key>port</key>
 						<data>
 						FQAAAA==
 						</data>
+						<key>Comment</key>
+						<string>front_usbc_1</string>
 					</dict>
 					<key>SS06</key>
 					<dict>
@@ -256,25 +268,29 @@
 						FgAAAA==
 						</data>
 						<key>Comment</key>
-						<string>front_usbc</string>
+						<string>front_usbc_2</string>
 					</dict>
 					<key>SS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>#port</key>
+						<key>port</key>
 						<data>
 						FwAAAA==
 						</data>
+						<key>Comment</key>
+						<string>front_usb3_2</string>
 					</dict>
 					<key>SS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>#port</key>
+						<key>port</key>
 						<data>
 						GAAAAA==
 						</data>
+						<key>Comment</key>
+						<string>front_usb3_1</string>
 					</dict>
 					<key>SS09</key>
 					<dict>
@@ -284,6 +300,8 @@
 						<data>
 						GQAAAA==
 						</data>
+						<key>Comment</key>
+						<string>back_usb3_7</string>
 					</dict>
 					<key>SS10</key>
 					<dict>
