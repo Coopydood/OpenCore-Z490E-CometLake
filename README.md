@@ -347,7 +347,7 @@ Contents stored in NVRAM.
 |---------------------------|:--------:|:------------------------------------------------------------------------------:|
 | ForceDisplayRotationInEFI |  Number  |                                        0                                       |
 | SystemAudioVolume         |   Data   |                                     ``46``                                     |
-| boot-args                 |  String  | keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 |
+| boot-args                 |  String  | keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 itlwm_cc=GB |
 | csr-active-config         |   Data   |                                  ``00000000``                                  |
 | prev-lang-diags:kbd       |   Data   |                                 ``656E2D47 42``                                |
 | prev-lang:kbd             |   Data   |                               ``656E2D47 423A32``                              |
@@ -369,7 +369,6 @@ Due to the system having a 10-core i9-10900K, the CPU model is similar to the on
 Drivers in use:
 
 - HFSPlus
-- NVMExpressDxe
 - OpenCanopy
 - OpenRuntime
 - ResetNvramEntry
