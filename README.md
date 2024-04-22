@@ -20,9 +20,7 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 
 <h3>ASUS ROG STRIX Z490-E GAMING<br><sub><a href="https://rog.asus.com/uk/motherboards/rog-strix/rog-strix-z490-e-gaming-model/">Product Page</a></sub></h3>
 
-*"The ROG Strix Z490-E Gaming motherboard is designed to cope with the demands of 10th Generation Intel® Core™ processors, with boosted power delivery and an optimised cooling design providing more surface area for heat dissipation."*
-
-*<sub>Product description provided by ASUS.</sub>*
+*"The ROG Strix Z490-E Gaming motherboard is designed to cope with the demands of 10th Generation Intel® Core™ processors, with boosted power delivery and an optimised cooling design providing more surface area for heat dissipation."* <br> *<sub>Product description provided by ASUS.</sub>*
 <br>
 
 ## BIOS
