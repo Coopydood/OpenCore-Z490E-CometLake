@@ -217,7 +217,7 @@ The following tables display the added PCI devices and their child keys.
 
 ### PciRoot(0x0)/Pci(0x2,0x0)
 
-Intel UHD 630 Graphics
+Intel UHD Graphics 630 
 
 | **Key**                  | **Type** |   **Value**  |
 |--------------------------|:--------:|:------------:|
@@ -229,7 +229,14 @@ Intel UHD 630 Graphics
 | igfxfw                   |   Data   | ``02000000`` |
 
 > [!WARNING]
-> The current configuration of the **Intel UHD 630** is ***headless*** and isn't used with any displays.
+> The current configuration of the **UHD Graphics 630** is ***headless*** and isn't used with any displays.
+
+> [!TIP]
+> The ``enable-metal`` key is now included to enable **Metal 3** graphics support with the UHD Graphics 630! 
+> 
+> This means various macOS apps can now utilise the iGPU - even while headless - for more trivial tasks, such as rendering Finder. This frees up the dGPU's resources for other more intensive tasks.
+>
+> You can even see this in action by [enabling the hidden GPU tab in Activity Monitor](https://github.com/Coopydood/OpenCore-Z490E-CometLake#show-gpu-tab-in-activity-monitor).
 
 <br>
 
@@ -243,6 +250,11 @@ Intel I225-V 2.5Gb Ethernet
 
 > [!NOTE]
 > The **Intel I225-V** requires a special patch mentioned in [Kernel](https://github.com/Coopydood/OpenCore-Z490E-CometLake/?tab=readme-ov-file#patches).
+> 
+> This only applies to macOS Big Sur and older.
+
+> [!TIP]
+> For improved compatibility with macOS Big Sur and older, the ``I225-V`` model has now been masked as the near-identical ``I225-LM`` model. After extensive testing, it appears functionality is the same.
 
 <br>
 
@@ -284,6 +296,11 @@ Kexts used:
 
 > [!NOTE]
 > ``Z490E_USBMap.kext`` is a custom kext containing the USB mappings of my ASUS ROG STRIX Z490-E GAMING motherboard ports - your mileage may vary!
+
+> [!TIP]
+> There are multiple versions of ``AirportItlwm.kext`` installed to support various versions of macOS.
+>
+> You don't have to remove any - they have all been individually configured to only be injected based on the macOS version booted.
 
 ### Patches
 
