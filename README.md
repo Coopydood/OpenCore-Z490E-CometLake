@@ -27,25 +27,25 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 
 <img align="left" width="120" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4670b456-040b-4915-bd5d-6ed63cb4b408">
 
-<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=280 width=2 />
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=150 width=2 />
 
 <h3>UEFI BIOS Utility<br><sub>Configuration</sub></h3>
 
-
 These are the BIOS settings used with this Hackintosh setup.
 
-<br>
+|       **Setting**                  |     **Value**    |
+|:----------------------------------:|:----------------:|
+| **VT-d**                           |    ``Enabled``   |
+| **Above 4G Decoding**<sup>1</sup>  |   ``Disabled``   |
+| **ReSizeable BAR**<sup>1</sup>     |   ``Disabled``   |
+| **Memory Remap**                   |    ``Enabled``   |
+| **Primary Output**                 | ``CPU Graphics`` |
+| **DVMT PreAlloc Size**             |     ``64MB``     |
+| **iGPU Multi-Monitor**             |    ``Enabled``   |
 
-**SETTING:** `VALUE`
-<br>
-**SETTING:** `VALUE`
-<br>
-**SETTING:** `VALUE`
-<br>
-**SETTING:** `VALUE`
-<br>
-**SETTING:** `VALUE`
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=100 width=140 />
 
+<sup>1 </sup>*ReSizable BAR and Above 4G Decoding are disabled to allow for the proper virtualisation of macOS under QEMU/KVM with PCI passthrough.*
 
 <br>
 
