@@ -282,14 +282,13 @@ Kexts used:
 - AirportItlwm
 - IntelBluetoothFirmware
 - NVMeFix
-- RadeonSensor
 - VirtualSMC
 - AppleALC
 - BlueToolFixup
 - IntelBTPatcher
 - SMCProcessor
-- SMCRadeonGPU
 - SMCSuperIO
+- SMCRadeonSensors
 - FeatureUnlock
 - RTCMemoryFixup
 - Z490E_USBMap
