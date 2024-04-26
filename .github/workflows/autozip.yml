@@ -63,7 +63,7 @@ jobs:
       
           # The message for the commit.
           # Default: 'Commit from GitHub Actions (name of the workflow)'
-          message: 'AutoZip OC folders'
+          message: 'Create EFI.zip'
       
           # If this input is set, the action will push the commit to a new branch with this name.
           # Default: ''
