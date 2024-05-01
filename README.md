@@ -228,7 +228,7 @@ Intel UHD Graphics 630
 | framebuffer-stolenmem    |   Data   | ``00003001`` |
 | igfxfw                   |   Data   | ``02000000`` |
 
-> [!WARNING]
+> [!IMPORTANT]
 > The current configuration of the **UHD Graphics 630** is ***headless*** and isn't used with any displays.
 
 > [!TIP]
