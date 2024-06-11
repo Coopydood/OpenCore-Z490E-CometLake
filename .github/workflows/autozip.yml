@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.PAT }}
       - uses: vimtor/action-zip@v1.1
         with:
-          files: OC/ACPI/ OC/Drivers/ OC/Resources/ OC/Tools/ OC/config.plist OC/OpenCore.efi OC/.contentFlavour OC/.contentVisibility OC/Kexts/ BOOT/
+          files: OC/ BOOT/
           dest: ./EFI.zip
           
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
