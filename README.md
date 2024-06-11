@@ -1,8 +1,8 @@
 <img align="left" height="150" src="https://private-user-images.githubusercontent.com/39441479/324199787-b54b7098-bc82-4110-8a3e-2c4ed729b1b0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMjkxODksIm5iZiI6MTcxODEyODg4OSwicGF0aCI6Ii8zOTQ0MTQ3OS8zMjQxOTk3ODctYjU0YjcwOTgtYmM4Mi00MTEwLThhM2UtMmM0ZWQ3MjliMWIwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjExVDE4MDEyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIzNzEwZjdhZTU4ZDEyYTAzNTg2NGY1MTQwYWIwYWQyNGY1NGZlY2U5OWEzZjMyYjY4MWU3NGYxMzcyNzNlMTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ApCfe0iPbaMBS3GD14VmE1ZgvbcbFnbzvY2eT5JErdA">
 
-<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=200 width=2 />
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=180 width=2 />
 
-<a href="https://coopydood.github.io/ultimate-macOS-KVM"></a><h1>OpenCore Z490-E (Comet Lake)</h1>
+<a href="https://coopydood.github.io/ultimate-macOS-KVM"></a><h3>OpenCore Z490-E (Comet Lake)</h3>
 
 OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with an Intel® Core™ i9-10900K. 
 
