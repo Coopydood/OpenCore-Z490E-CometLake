@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.PAT }}
       - uses: vimtor/action-zip@v1.1
         with:
-          files: OC/ACPI/ OC/Drivers/ OC/Resources/ OC/Tools/ OC/config.plist OC/OpenCore.efi OC/.contentFlavour OC/.contentVisibility OC/Kexts/AirportItlwm_BigSur.kext OC/Kexts/AirportItlwm_Catalina.kext OC/Kexts/AirportItlwm_Monterey.kext OC/Kexts/AirportItlwm_SonomaV2.kext OC/Kexts/AirportItlwm_Ventura.kext OC/Kexts/AppleALC.kext OC/Kexts/BlueToolFixup.kext OC/Kexts/FeatureUnlock.kext OC/Kexts/IntelBluetoothFirmware.kext OC/Kexts/IntelBluetoothInjector.kext OC/Kexts/IntelBTPatcher.kext OC/Kexts/Lilu.kext OC/Kexts/NVMeFix.kext OC/Kexts/RTCMemoryFixup.kext OC/Kexts/SMCProcessor.kext OC/Kexts/SMCRadeonSensors.kext OC/Kexts/SMCSuperIO.kext OC/Kexts/USBMapDummy.kext OC/Kexts/VirtualSMC.kext OC/Kexts/WhateverGreen.kext OC/Kexts/Z490E_USBMap.kext BOOT/
+          files: OC/ACPI/ OC/Drivers/ OC/Resources/ OC/Tools/ OC/config.plist OC/OpenCore.efi OC/.contentFlavour OC/.contentVisibility OC/Kexts/ BOOT/
           dest: ./EFI.zip
           
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
