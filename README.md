@@ -1,4 +1,9 @@
-# OpenCore Z490-E (Comet Lake)
+<img align="left" height="150" src="https://private-user-images.githubusercontent.com/39441479/324199787-b54b7098-bc82-4110-8a3e-2c4ed729b1b0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMjkxODksIm5iZiI6MTcxODEyODg4OSwicGF0aCI6Ii8zOTQ0MTQ3OS8zMjQxOTk3ODctYjU0YjcwOTgtYmM4Mi00MTEwLThhM2UtMmM0ZWQ3MjliMWIwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjExVDE4MDEyOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIzNzEwZjdhZTU4ZDEyYTAzNTg2NGY1MTQwYWIwYWQyNGY1NGZlY2U5OWEzZjMyYjY4MWU3NGYxMzcyNzNlMTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ApCfe0iPbaMBS3GD14VmE1ZgvbcbFnbzvY2eT5JErdA">
+
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=200 width=2 />
+
+<a href="https://coopydood.github.io/ultimate-macOS-KVM"></a><h1>OpenCore Z490-E (Comet Lake)</h1>
+
 OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with an Intel® Core™ i9-10900K. 
 
 <img src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/af012dbc-dd39-474e-bb11-3f5ed0682cd3" alt="Z490-E Hackintosh" width="1400"/>
@@ -29,7 +34,7 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=150 width=2 />
 
-<h3>UEFI BIOS Utility<br><sub>Configuration</sub></h3>
+<h3>UEFI BIOS Utility<br><sub>Version 3001 (19/02/2024)</sub></h3>
 
 These are the BIOS settings used with this Hackintosh setup.
 
@@ -55,7 +60,7 @@ These are the BIOS settings used with this Hackintosh setup.
 
 <img align="left" width="100" height="100" src="https://dortania.github.io/docs/latest/Logos/Logo.png">
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=100 width=2 />
-<h3>OpenCore<br><sub>0.9.9</sub></h3>
+<h3>OpenCore<br><sub>1.0.0</sub></h3>
 
 This is the version of OpenCore used, including bundled files. The included ``config.plist`` targets this version.
 <br>
@@ -65,7 +70,7 @@ This is the version of OpenCore used, including bundled files. The included ``co
 
 <img align="left" width="90" height="90" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/aa49b5ba-6cca-4dab-bcfc-6bf21909e738">
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=360 width=2 />
-<h3>macOS Sonoma<br><sub>14.4.1</sub></h3>
+<h3>macOS Sonoma<br><sub>14.5</sub></h3>
 
 This is the version of macOS that this OpenCore configuration currently targets. Other versions of macOS that are compatible with it are listed below.<br>
 
@@ -289,12 +294,16 @@ Kexts used:
 - SMCProcessor
 - SMCSuperIO
 - SMCRadeonSensors
+- RestrictEvents
 - FeatureUnlock
 - RTCMemoryFixup
 - Z490E_USBMap
 
 > [!NOTE]
 > ``Z490E_USBMap.kext`` is a custom kext containing the USB mappings of my ASUS ROG STRIX Z490-E GAMING motherboard ports - your mileage may vary!
+
+> [!NOTE]
+> ``RestrictEvents.kext`` has been added to utilise its OTA software update patches. It does NOT apply any other patches.
 
 > [!TIP]
 > There are multiple versions of ``AirportItlwm.kext`` installed to support various versions of macOS.
@@ -363,11 +372,10 @@ Contents stored in NVRAM.
 |---------------------------|:--------:|:------------------------------------------------------------------------------:|
 | ForceDisplayRotationInEFI |  Number  |                                        0                                       |
 | SystemAudioVolume         |   Data   |                                     ``46``                                     |
-| boot-args                 |  String  | keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 itlwm_cc=GB |
+| boot-args                 |  String  | keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 itlwm_cc=GB revpatch=sbvmm |
 | csr-active-config         |   Data   |                                  ``00000000``                                  |
 | prev-lang-diags:kbd       |   Data   |                                 ``656E2D47 42``                                |
-| prev-lang:kbd             |   Data   |                               ``656E2D47 423A32``                              |
-| run-efi-updater           |  String  |                                       No                                       |
+| prev-lang:kbd             |   Data   |                               ``656E2D47 423A32``                              |                                      |
 | StartupMute               |   Data   |                                     ``00``                                     |
 
 ***
