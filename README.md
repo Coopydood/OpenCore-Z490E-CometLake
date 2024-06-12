@@ -1,11 +1,15 @@
 <img align="left" height="150" src="https://github.com/Coopydood/Coopydood/assets/39441479/b54b7098-bc82-4110-8a3e-2c4ed729b1b0">
 
-<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=140 width=1 />
+<img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=240 width=1 />
 
 <a href="https://coopydood.github.io/ultimate-macOS-KVM"></a><h3>OpenCore Z490-E (Comet Lake)</h3>
 
 OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with an Intel® Core™ i9-10900K. 
-<br><br><br>
+<br>
+
+[![GitHub](https://img.shields.io/github/license/Coopydood/OpenCore-Z490E-CometLake?label=Licence&logo=unlicense&logoColor=white&style=for-the-badge)](https://github.com/Coopydood/OpenCore-Z490E-CometLake/blob/main/LICENSE) [![GitHub repo size](https://img.shields.io/github/repo-size/Coopydood/OpenCore-Z490E-CometLake?color=07b55b&label=Size&logo=envoy-proxy&logoColor=white&style=for-the-badge)](https://github.com/Coopydood/OpenCore-Z490E-CometLake) [![Discord](https://img.shields.io/discord/574943603466436628?color=7d86ff&label=Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/WzWkSsT)
+
+<br><br>
 
 ***
 
