@@ -77,7 +77,7 @@ This is the version of OpenCore used, including bundled files. The included ``co
 
 <img align="left" width="90" height="90" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/aa49b5ba-6cca-4dab-bcfc-6bf21909e738">
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=360 width=2 />
-<h3>macOS Sonoma<br><sub>14.5</sub></h3>
+<h3>macOS Sonoma<br></h3>
 
 This is the version of macOS that this OpenCore configuration currently targets. Other versions of macOS that are compatible with it are listed below.<br>
 
