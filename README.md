@@ -275,73 +275,70 @@ Intel UHD Graphics 630
 
 You can paste this data straight into plist editors like ProperTree.
 
-```plist
+```xml
+<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 <dict>
-	<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-	<dict>
-		<key>AAPL,ig-platform-id</key>
-		<data>AACbPg==</data>
-		<key>device-id</key>
-		<data>mz4AAA==</data>
-		<key>disable-agdc</key>
-		<data>AQAAAA==</data>
-		<key>enable-hdmi-dividers-fix</key>
-		<data>AQAAAA==</data>
-		<key>enable-hdmi20</key>
-		<data>AQAAAA==</data>
-		<key>enable-metal</key>
-		<data>AQAAAA==</data>
-		<key>framebuffer-con0-busid</key>
-		<data>AgAAAA==</data>
-		<key>framebuffer-con0-enable</key>
-		<data>AQAAAA==</data>
-		<key>framebuffer-con0-flags</key>
-		<data>xwMAAA==</data>
-		<key>framebuffer-con0-index</key>
-		<data>AgAAAA==</data>
-		<key>framebuffer-con0-pipe</key>
-		<data>CgAAAA==</data>
-		<key>framebuffer-con0-type</key>
-		<data>AAgAAA==</data>
-		<key>framebuffer-con1-busid</key>
-		<data>BAAAAA==</data>
-		<key>framebuffer-con1-enable</key>
-		<data>AQAAAA==</data>
-		<key>framebuffer-con1-flags</key>
-		<data>xwMAAA==</data>
-		<key>framebuffer-con1-index</key>
-		<data>AwAAAA==</data>
-		<key>framebuffer-con1-pipe</key>
-		<data>CAAAAA==</data>
-		<key>framebuffer-con1-type</key>
-		<data>AAgAAA==</data>
-		<key>framebuffer-con2-busid</key>
-		<data>AQAAAA==</data>
-		<key>framebuffer-con2-enable</key>
-		<data>AQAAAA==</data>
-		<key>framebuffer-con2-flags</key>
-		<data>xwMAAA==</data>
-		<key>framebuffer-con2-index</key>
-		<data>AQAAAA==</data>
-		<key>framebuffer-con2-pipe</key>
-		<data>CQAAAA==</data>
-		<key>framebuffer-con2-type</key>
-		<data>AAgAAA==</data>
-		<key>framebuffer-patch-enable</key>
-		<data>AQAAAA==</data>
-		<key>framebuffer-stolenmem</key>
-		<data>AAAwAQ==</data>
-		<key>hda-gfx</key>
-		<string>onboard-1</string>
-		<key>igfxfw</key>
-		<data>AgAAAA==</data>
-		<key>model</key>
-		<string>Intel UHD Graphics 630</string>
-		<key>rps-control</key>
-		<data>AQAAAA==</data>
-	</dict>
+	<key>AAPL,ig-platform-id</key>
+	<data>AACbPg==</data>
+	<key>device-id</key>
+	<data>mz4AAA==</data>
+	<key>disable-agdc</key>
+	<data>AQAAAA==</data>
+	<key>enable-hdmi-dividers-fix</key>
+	<data>AQAAAA==</data>
+	<key>enable-hdmi20</key>
+	<data>AQAAAA==</data>
+	<key>enable-metal</key>
+	<data>AQAAAA==</data>
+	<key>framebuffer-con0-busid</key>
+	<data>AgAAAA==</data>
+	<key>framebuffer-con0-enable</key>
+	<data>AQAAAA==</data>
+	<key>framebuffer-con0-flags</key>
+	<data>xwMAAA==</data>
+	<key>framebuffer-con0-index</key>
+	<data>AgAAAA==</data>
+	<key>framebuffer-con0-pipe</key>
+	<data>CgAAAA==</data>
+	<key>framebuffer-con0-type</key>
+	<data>AAgAAA==</data>
+	<key>framebuffer-con1-busid</key>
+	<data>BAAAAA==</data>
+	<key>framebuffer-con1-enable</key>
+	<data>AQAAAA==</data>
+	<key>framebuffer-con1-flags</key>
+	<data>xwMAAA==</data>
+	<key>framebuffer-con1-index</key>
+	<data>AwAAAA==</data>
+	<key>framebuffer-con1-pipe</key>
+	<data>CAAAAA==</data>
+	<key>framebuffer-con1-type</key>
+	<data>AAgAAA==</data>
+	<key>framebuffer-con2-busid</key>
+	<data>AQAAAA==</data>
+	<key>framebuffer-con2-enable</key>
+	<data>AQAAAA==</data>
+	<key>framebuffer-con2-flags</key>
+	<data>xwMAAA==</data>
+	<key>framebuffer-con2-index</key>
+	<data>AQAAAA==</data>
+	<key>framebuffer-con2-pipe</key>
+	<data>CQAAAA==</data>
+	<key>framebuffer-con2-type</key>
+	<data>AAgAAA==</data>
+	<key>framebuffer-patch-enable</key>
+	<data>AQAAAA==</data>
+	<key>framebuffer-stolenmem</key>
+	<data>AAAwAQ==</data>
+	<key>hda-gfx</key>
+	<string>onboard-1</string>
+	<key>igfxfw</key>
+	<data>AgAAAA==</data>
+	<key>model</key>
+	<string>Intel UHD Graphics 630</string>
+	<key>rps-control</key>
+	<data>AQAAAA==</data>
 </dict>
-</plist>
 ```
 </details><br>
 
@@ -372,15 +369,12 @@ Intel I225-V 2.5Gb Ethernet
 
 You can paste this data straight into plist editors like ProperTree.
 
-```plist
+```xml
+<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
 <dict>
-	<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
-	<dict>
-		<key>device-id</key>
-		<data>8hUAAA==</data>
-	</dict>
+	<key>device-id</key>
+	<data>8hUAAA==</data>
 </dict>
-</plist>
 ```
 </details><br>
 
@@ -407,17 +401,14 @@ Apple ALC
 
 You can paste this data straight into plist editors like ProperTree.
 
-```plist
+```xml
+<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 <dict>
-	<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-	<dict>
-		<key>AAPL,ig-platform-id</key>
-		<data>AwAiDQ==</data>
-		<key>layout-id</key>
-		<data>AQAAAA==</data>
-	</dict>
+	<key>AAPL,ig-platform-id</key>
+	<data>AwAiDQ==</data>
+	<key>layout-id</key>
+	<data>AQAAAA==</data>
 </dict>
-</plist>
 ```
 </details><br>
 
@@ -483,37 +474,37 @@ Intel I225-V 2.5Gb Ethernet
 
 You can paste this data straight into plist editors like ProperTree.
 
-```plist
-	<dict>
-		<key>Arch</key>
-		<string>Any</string>
-		<key>Base</key>
-		<string>__Z18e1000_set_mac_typeP8e1000_hw</string>
-		<key>Comment</key>
-		<string>I225-V patch</string>
-		<key>Count</key>
-		<integer>1</integer>
-		<key>Enabled</key>
-		<true/>
-		<key>Find</key>
-		<data>8hUAAA==</data>
-		<key>Identifier</key>
-		<string>com.apple.driver.AppleIntelI210Ethernet</string>
-		<key>Limit</key>
-		<integer>0</integer>
-		<key>Mask</key>
-		<data></data>
-		<key>MaxKernel</key>
-		<string>20.4.0</string>
-		<key>MinKernel</key>
-		<string>19.0.0</string>
-		<key>Replace</key>
-		<data>8xUAAA==</data>
-		<key>ReplaceMask</key>
-		<data></data>
-		<key>Skip</key>
-		<integer>0</integer>
-	</dict>
+```xml
+<dict>
+	<key>Arch</key>
+	<string>Any</string>
+	<key>Base</key>
+	<string>__Z18e1000_set_mac_typeP8e1000_hw</string>
+	<key>Comment</key>
+	<string>I225-V patch</string>
+	<key>Count</key>
+	<integer>1</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>Find</key>
+	<data>8hUAAA==</data>
+	<key>Identifier</key>
+	<string>com.apple.driver.AppleIntelI210Ethernet</string>
+	<key>Limit</key>
+	<integer>0</integer>
+	<key>Mask</key>
+	<data></data>
+	<key>MaxKernel</key>
+	<string>20.4.0</string>
+	<key>MinKernel</key>
+	<string>19.0.0</string>
+	<key>Replace</key>
+	<data>8xUAAA==</data>
+	<key>ReplaceMask</key>
+	<data></data>
+	<key>Skip</key>
+	<integer>0</integer>
+</dict>
 ```
 </details><br>
 
@@ -568,36 +559,36 @@ Contents stored in NVRAM.
 
 You can paste this data straight into plist editors like ProperTree.
 
-```plist
+```xml
+<dict>
+	<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 	<dict>
-		<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-		<dict>
-			<key>DefaultBackgroundColor</key>
-			<data>AAAAAA==</data>
-		</dict>
-		<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
-		<dict>
-			<key>rtc-blacklist</key>
-			<data></data>
-		</dict>
-		<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-		<dict>
-			<key>ForceDisplayRotationInEFI</key>
-			<integer>0</integer>
-			<key>boot-args</key>
-			<string>keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 itlwm_cc=GB revpatch=sbvmm</string>
-			<key>prev-lang-diags:kbd</key>
-			<data>ZW4tR0I=</data>
-			<key>prev-lang:kbd</key>
-			<data>ZW4tR0I6Mg==</data>
-			<key>csr-active-config</key>
-			<data>AAAAAA==</data>
-			<key>StartupMute</key>
-			<data>AA==</data>
-			<key>SystemAudioVolume</key>
-			<data>Rg==</data>
-		</dict>
+		<key>DefaultBackgroundColor</key>
+		<data>AAAAAA==</data>
 	</dict>
+	<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
+	<dict>
+		<key>rtc-blacklist</key>
+		<data></data>
+	</dict>
+	<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+	<dict>
+		<key>ForceDisplayRotationInEFI</key>
+		<integer>0</integer>
+		<key>boot-args</key>
+		<string>keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 itlwm_cc=GB revpatch=sbvmm</string>
+		<key>prev-lang-diags:kbd</key>
+		<data>ZW4tR0I=</data>
+		<key>prev-lang:kbd</key>
+		<data>ZW4tR0I6Mg==</data>
+		<key>csr-active-config</key>
+		<data>AAAAAA==</data>
+		<key>StartupMute</key>
+		<data>AA==</data>
+		<key>SystemAudioVolume</key>
+		<data>Rg==</data>
+	</dict>
+</dict>
 
 ```
 </details><br>
