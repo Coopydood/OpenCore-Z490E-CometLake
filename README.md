@@ -240,12 +240,110 @@ Intel UHD Graphics 630
 
 | **Key**                  | **Type** |   **Value**  |
 |--------------------------|:--------:|:------------:|
-| AAPL,ig-platform-id      |   Data   | ``0000923E`` |
+| AAPL,ig-platform-id      |   Data   | ``00009B3E`` |
 | device-id                |   Data   | ``9B3E0000`` |
 | enable-metal             |   Data   | ``01000000`` |
-| framebuffer-patch-enable |   Data   | ``01000000`` |
-| framebuffer-stolenmem    |   Data   | ``00003001`` |
+| disable-agdc             	|   Data   	|        ``01000000``       	|
+| enable-hdmi-dividers-fix 	|   Data   	|        ``01000000``       	|
+| enable-hdmi20            	|   Data   	|        ``01000000``       	|
+| framebuffer-con0-busid  	|   Data   	|        ``02000000``       	|
+| framebuffer-con0-enable    	|   Data   	|        ``01000000``       	|
+| framebuffer-con0-flags  	|   Data   	|        ``C7030000``       	|
+| framebuffer-con0-index    	|   Data   	|        ``02000000``       	|
+| framebuffer-con0-pipe  	|   Data   	|        ``0A000000``       	|
+| framebuffer-con0-type    	|   Data   	|        ``00080000``       	|
+| framebuffer-con1-busid  	|   Data   	|        ``04000000``       	|
+| framebuffer-con1-enable    	|   Data   	|        ``01000000``       	|
+| framebuffer-con1-flags  	|   Data   	|        ``C7030000``       	|
+| framebuffer-con1-index    	|   Data   	|        ``03000000``       	|
+| framebuffer-con1-pipe  	|   Data   	|        ``08000000``       	|
+| framebuffer-con1-type    	|   Data   	|        ``00080000``       	|
+| framebuffer-con2-busid  	|   Data   	|        ``01000000``       	|
+| framebuffer-con2-enable    	|   Data   	|        ``01000000``       	|
+| framebuffer-con2-flags  	|   Data   	|        ``C7030000``       	|
+| framebuffer-con2-index    	|   Data   	|        ``01000000``       	|
+| framebuffer-con2-pipe  	|   Data   	|        ``09000000``       	|
+| framebuffer-con2-type    	|   Data   	|        ``00080000``       	|
+| framebuffer-patch-enable 	|   Data   	|        ``01000000``       	|
+| framebuffer-stolenmem    	|   Data   	|        ``00003001``       	|
+| rps-control              	|   Data   	|        ``01000000``       	|
+| hda-gfx                 	|   String   	|        ``onboard-1``       	|
+| model                   	|   String   	|        ``Intel UHD Graphics 630``       	|
 | igfxfw                   |   Data   | ``02000000`` |
+
+<details><summary><h4>📄  Show as property list data</h4><br><sup>Expand this if you want to copy and paste the entries above as <code>.plist</code> data!</summary>
+
+You can paste this data straight into plist editors like ProperTree.
+
+```plist
+<dict>
+	<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+	<dict>
+		<key>AAPL,ig-platform-id</key>
+		<data>AACbPg==</data>
+		<key>device-id</key>
+		<data>mz4AAA==</data>
+		<key>disable-agdc</key>
+		<data>AQAAAA==</data>
+		<key>enable-hdmi-dividers-fix</key>
+		<data>AQAAAA==</data>
+		<key>enable-hdmi20</key>
+		<data>AQAAAA==</data>
+		<key>enable-metal</key>
+		<data>AQAAAA==</data>
+		<key>framebuffer-con0-busid</key>
+		<data>AgAAAA==</data>
+		<key>framebuffer-con0-enable</key>
+		<data>AQAAAA==</data>
+		<key>framebuffer-con0-flags</key>
+		<data>xwMAAA==</data>
+		<key>framebuffer-con0-index</key>
+		<data>AgAAAA==</data>
+		<key>framebuffer-con0-pipe</key>
+		<data>CgAAAA==</data>
+		<key>framebuffer-con0-type</key>
+		<data>AAgAAA==</data>
+		<key>framebuffer-con1-busid</key>
+		<data>BAAAAA==</data>
+		<key>framebuffer-con1-enable</key>
+		<data>AQAAAA==</data>
+		<key>framebuffer-con1-flags</key>
+		<data>xwMAAA==</data>
+		<key>framebuffer-con1-index</key>
+		<data>AwAAAA==</data>
+		<key>framebuffer-con1-pipe</key>
+		<data>CAAAAA==</data>
+		<key>framebuffer-con1-type</key>
+		<data>AAgAAA==</data>
+		<key>framebuffer-con2-busid</key>
+		<data>AQAAAA==</data>
+		<key>framebuffer-con2-enable</key>
+		<data>AQAAAA==</data>
+		<key>framebuffer-con2-flags</key>
+		<data>xwMAAA==</data>
+		<key>framebuffer-con2-index</key>
+		<data>AQAAAA==</data>
+		<key>framebuffer-con2-pipe</key>
+		<data>CQAAAA==</data>
+		<key>framebuffer-con2-type</key>
+		<data>AAgAAA==</data>
+		<key>framebuffer-patch-enable</key>
+		<data>AQAAAA==</data>
+		<key>framebuffer-stolenmem</key>
+		<data>AAAwAQ==</data>
+		<key>hda-gfx</key>
+		<string>onboard-1</string>
+		<key>igfxfw</key>
+		<data>AgAAAA==</data>
+		<key>model</key>
+		<string>Intel UHD Graphics 630</string>
+		<key>rps-control</key>
+		<data>AQAAAA==</data>
+	</dict>
+</dict>
+</plist>
+```
+</details><br>
 
 > [!IMPORTANT]
 > The connector patches in the table above are new as of the **25th August 2024** and were implemented to **fix HDMI output**. Please add these new entries to enable HDMI! 
@@ -270,6 +368,22 @@ Intel I225-V 2.5Gb Ethernet
 |--------------------------|:--------:|:------------:|
 | device-id                |   Data   | ``F2150000`` |
 
+<details><summary><h4>📄  Show as property list data</h4><br><sup>Expand this if you want to copy and paste the entries above as <code>.plist</code> data!</summary>
+
+You can paste this data straight into plist editors like ProperTree.
+
+```plist
+<dict>
+	<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
+	<dict>
+		<key>device-id</key>
+		<data>8hUAAA==</data>
+	</dict>
+</dict>
+</plist>
+```
+</details><br>
+
 > [!NOTE]
 > The **Intel I225-V** requires a special patch mentioned in [Kernel](https://github.com/Coopydood/OpenCore-Z490E-CometLake/?tab=readme-ov-file#patches).
 > 
@@ -289,6 +403,23 @@ Apple ALC
 | AAPL,ig-platform-id      |   Data   | ``0300220D`` |
 | layout-id                |   Data   | ``01000000`` |
 
+<details><summary><h4>📄  Show as property list data</h4><br><sup>Expand this if you want to copy and paste the entries above as <code>.plist</code> data!</summary>
+
+You can paste this data straight into plist editors like ProperTree.
+
+```plist
+<dict>
+	<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+	<dict>
+		<key>AAPL,ig-platform-id</key>
+		<data>AwAiDQ==</data>
+		<key>layout-id</key>
+		<data>AQAAAA==</data>
+	</dict>
+</dict>
+</plist>
+```
+</details><br>
 
 ***
 
@@ -348,6 +479,44 @@ Intel I225-V 2.5Gb Ethernet
 | ReplaceMask |   Data   |                                         |
 | Skip        |  Number  |                    0                    |
 
+<details><summary><h4>📄  Show as property list data</h4><br><sup>Expand this if you want to copy and paste the entries above as <code>.plist</code> data!</summary>
+
+You can paste this data straight into plist editors like ProperTree.
+
+```plist
+	<dict>
+		<key>Arch</key>
+		<string>Any</string>
+		<key>Base</key>
+		<string>__Z18e1000_set_mac_typeP8e1000_hw</string>
+		<key>Comment</key>
+		<string>I225-V patch</string>
+		<key>Count</key>
+		<integer>1</integer>
+		<key>Enabled</key>
+		<true/>
+		<key>Find</key>
+		<data>8hUAAA==</data>
+		<key>Identifier</key>
+		<string>com.apple.driver.AppleIntelI210Ethernet</string>
+		<key>Limit</key>
+		<integer>0</integer>
+		<key>Mask</key>
+		<data></data>
+		<key>MaxKernel</key>
+		<string>20.4.0</string>
+		<key>MinKernel</key>
+		<string>19.0.0</string>
+		<key>Replace</key>
+		<data>8xUAAA==</data>
+		<key>ReplaceMask</key>
+		<data></data>
+		<key>Skip</key>
+		<integer>0</integer>
+	</dict>
+```
+</details><br>
+
 ***
 
 ## Security
@@ -394,6 +563,44 @@ Contents stored in NVRAM.
 | prev-lang-diags:kbd       |   Data   |                                 ``656E2D47 42``                                |
 | prev-lang:kbd             |   Data   |                               ``656E2D47 423A32``                              |                                      |
 | StartupMute               |   Data   |                                     ``00``                                     |
+
+<details><summary><h4>📄  Show as property list data</h4><br><sup>Expand this if you want to copy and paste the entries above as <code>.plist</code> data!</summary>
+
+You can paste this data straight into plist editors like ProperTree.
+
+```plist
+	<dict>
+		<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
+		<dict>
+			<key>DefaultBackgroundColor</key>
+			<data>AAAAAA==</data>
+		</dict>
+		<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
+		<dict>
+			<key>rtc-blacklist</key>
+			<data></data>
+		</dict>
+		<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+		<dict>
+			<key>ForceDisplayRotationInEFI</key>
+			<integer>0</integer>
+			<key>boot-args</key>
+			<string>keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera igfxgl=1 forceRenderStandby=0 itlwm_cc=GB revpatch=sbvmm</string>
+			<key>prev-lang-diags:kbd</key>
+			<data>ZW4tR0I=</data>
+			<key>prev-lang:kbd</key>
+			<data>ZW4tR0I6Mg==</data>
+			<key>csr-active-config</key>
+			<data>AAAAAA==</data>
+			<key>StartupMute</key>
+			<data>AA==</data>
+			<key>SystemAudioVolume</key>
+			<data>Rg==</data>
+		</dict>
+	</dict>
+
+```
+</details><br>
 
 ***
 
@@ -515,3 +722,12 @@ If you've found a way to make the configuration better, or have solved issues ou
 <p align="center">
   <img src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/39d78d4b-8ce8-44f4-bba7-fefdbf2f80db" width="10%"> </img>
 </p>
+
+<!-- <details><summary><h4>📄  Show as property list data</h4><br><sup>Expand this if you want to copy and paste the entries above as <code>.plist</code> data!</summary>
+
+You can paste this data straight into plist editors like ProperTree.
+
+```plist
+
+```
+</details><br> --!>
