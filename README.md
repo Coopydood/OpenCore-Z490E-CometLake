@@ -560,7 +560,6 @@ Contents stored in NVRAM.
 You can paste this data straight into plist editors like ProperTree.
 
 ```xml
-<dict>
 	<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 	<dict>
 		<key>DefaultBackgroundColor</key>
@@ -588,8 +587,6 @@ You can paste this data straight into plist editors like ProperTree.
 		<key>SystemAudioVolume</key>
 		<data>Rg==</data>
 	</dict>
-</dict>
-
 ```
 </details><br>
 
