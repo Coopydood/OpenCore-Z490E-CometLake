@@ -67,7 +67,7 @@ These are the BIOS settings used with this Hackintosh setup.
 
 <img align="left" width="100" height="100" src="https://dortania.github.io/docs/latest/Logos/Logo.png">
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=100 width=2 />
-<h3>OpenCore<br><sub>1.0.0</sub></h3>
+<h3>OpenCore<br><sub>1.0.1</sub></h3>
 
 This is the version of OpenCore used, including bundled files. The included ``config.plist`` targets this version.
 <br>
@@ -137,15 +137,22 @@ This is the version of macOS that this OpenCore configuration currently targets.
 
 ## Problems
 
+### 🎉 ALL MAJOR PROBLEMS HAVE BEEN FIXED!
+
+<br>
+
 <ul>
-<li><b>HDMI on Intel UHD 630 (iGPU)</b></li>
-Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU.
-As a result, the iGPU is being used for internal compute only - which works really well. I do still intend to find the fix though!
+<li><b><s>HDMI on Intel UHD 630 (iGPU)</s> ‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b></li>
+<s>Despite trying multiple different framebuffers and connection patches, I cannot get the HDMI output to work from the iGPU. DisplayPort works fine. HDMI also works fine on the dedicated GPU.
+As a result, the iGPU is being used for internal compute only - which works really well. I do still intend to find the fix though!</s>
+
+> [!TIP]
+> This was fixed by using new ``DeviceProperties`` connector patches (mentioned in the DeviceProperties section of this readme!).
 
 > [!NOTE]
 > The ``DeviceProperties`` for the UHD 630 iGPU has been updated to support Metal 3!
-> 
-<br><br>
+
+<br>
 
 <li><b><s>Wi-Fi and Bluetooth</s> ‏‏‎ ‏‏‎ ‎‎‏‏‎ ‎ 🎉 FIXED!</b></li>
 <s>Having worked on my virtualised instances of macOS Catalina and macOS Monterey, I'm still unable to get stable Wi-Fi or Bluetooth support on macOS Sonoma with <code>AirportItlwm.kext</code>. Wi-Fi networks will often connect but crash the entire system after a minute or two. Strangely, Wi-Fi worked flawlessly in macOS Recovery, and I even used it to install macOS as I had not patched the I225-V ethernet yet.</s>
@@ -241,7 +248,10 @@ Intel UHD Graphics 630
 | igfxfw                   |   Data   | ``02000000`` |
 
 > [!IMPORTANT]
-> The current configuration of the **UHD Graphics 630** is ***headless*** and isn't used with any displays.
+> The connector patches in the table above are new as of the **25th August 2024** and were implemented to **fix HDMI output**. Please add these new entries to enable HDMI! 
+
+> [!NOTE]
+> The NEW configuration of the **UHD Graphics 630** can run in both ***display and headless*** modes!
 
 > [!TIP]
 > The ``enable-metal`` key is now included to enable **Metal 3** graphics support with the UHD Graphics 630! 
