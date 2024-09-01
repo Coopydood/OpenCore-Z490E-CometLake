@@ -240,7 +240,7 @@ Intel UHD Graphics 630
 
 | **Key**                  | **Type** |   **Value**  |
 |--------------------------|:--------:|:------------:|
-| AAPL,ig-platform-id      |   Data   | ``00009B3E`` |
+| AAPL,ig-platform-id      |   Data   | ``07009B3E`` |
 | device-id                |   Data   | ``9B3E0000`` |
 | enable-metal             |   Data   | ``01000000`` |
 | disable-agdc             	|   Data   	|        ``01000000``       	|
@@ -279,7 +279,7 @@ You can paste this data straight into plist editors like ProperTree.
 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 <dict>
 	<key>AAPL,ig-platform-id</key>
-	<data>AACbPg==</data>
+	<data>BwCbPg==</data>
 	<key>device-id</key>
 	<data>mz4AAA==</data>
 	<key>disable-agdc</key>
