@@ -210,6 +210,22 @@ The specs of my main system that the OpenCore configuration targets.
 > [!NOTE]
 > The system contains an **NVIDIA RTX 3090** graphics card, but it has been intentionally disabled through a custom SSDT (``SSDT-GPU-DISABLE.aml``).
 
+
+### Geekbench Scores
+
+| **Intel Core i9-10900K** 	| **Windows** 	| **Linux** 	| **macOS** 	|
+|--------------------------	|-------------	|-----------	|-----------	|
+| Single Core              	| 1,694       	| 1,936     	| 1,751     	|
+| Muti Core                	| 9,279       	| 10,229    	| 9,883     	|
+
+| **GPU**                  	| **Windows**<br>Vulkan 	| **Linux**<br>Vulkan 	| **macOS**<br>Metal 	|
+|----------------------------	|-----------------------	|---------------------	|--------------------	|
+| NVIDIA<br>GeForce RTX 3090 	| 182,120               	| 186,533             	| -                  	|
+| AMD<br>Radeon RX 5700 XT   	| 68,514                	| 75,313              	| 101,291            	|
+| Intel<br>UHD 630 Graphics  	| 6,275                 	| 5,702               	| 6,312              	|
+
+<br>
+
 ***
 
 ## ACPI
