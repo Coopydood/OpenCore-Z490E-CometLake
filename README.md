@@ -83,6 +83,8 @@ This is the version of macOS that this OpenCore configuration currently targets.
 
 #### Supported
 
+<img align="left" width="35" height="35" src="https://github.com/user-attachments/assets/7b9b72ee-5a89-49b4-ae17-7a188ed533ab"> 
+<h5>macOS Sequoia</h5>
 <img align="left" width="35" height="35" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/4829ebb4-ce7f-4ecf-8309-d691c9361f6b"> 
 <h5>macOS Ventura</h5>
 <img align="left" width="35" height="35" src="https://github.com/Coopydood/OpenCore-Z490E-CometLake/assets/39441479/7d341cce-4370-4430-b3d5-bf1868afe4a3"> 
@@ -99,6 +101,7 @@ This is the version of macOS that this OpenCore configuration currently targets.
 
 ### macOS
 
+- [x] macOS Sequoia
 - [x] macOS Sonoma
 - [x] macOS Catalina
 
@@ -220,8 +223,8 @@ The specs of my main system that the OpenCore configuration targets.
 
 | **GPU**                  	| **Windows**<br>Vulkan 	| **Linux**<br>Vulkan 	| **macOS**<br>Metal 	|
 |----------------------------	|-----------------------	|---------------------	|--------------------	|
-| NVIDIA<br>GeForce RTX 3090 	| 182,120               	| 186,533             	| -                  	|
-| AMD<br>Radeon RX 5700 XT   	| 68,514                	| 75,313              	| 101,291            	|
+| NVIDIA<br>GeForce RTX 3090 	| 182,120               	| 194,027             	| -                  	|
+| AMD<br>Radeon RX 5700 XT   	| 68,514                	| 76,096              	| 101,291            	|
 | Intel<br>UHD 630 Graphics  	| 6,275                 	| 5,702               	| 6,312              	|
 
 <br>
