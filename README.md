@@ -67,7 +67,7 @@ These are the BIOS settings used with this Hackintosh setup.
 
 <img align="left" width="100" height="100" src="https://dortania.github.io/docs/latest/Logos/Logo.png">
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=100 width=2 />
-<h3>OpenCore<br><sub>1.0.1</sub></h3>
+<h3>OpenCore<br><sub>1.0.2</sub></h3>
 
 This is the version of OpenCore used, including bundled files. The included ``config.plist`` targets this version.
 <br>
