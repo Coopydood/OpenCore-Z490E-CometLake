@@ -2,7 +2,7 @@
 
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=240 width=1 />
 
-<a href="https://coopydood.github.io/ultimate-macOS-KVM"></a><h3>OpenCore Z490-E (Comet Lake)<br><sub>v1.0.0</sub></h3>
+<a href="https://coopydood.github.io/ultimate-macOS-KVM"></a><h3>OpenCore Z490-E (Comet Lake)<br><sub>v1.0.1</sub></h3>
 
 OpenCore Hackintosh configuration example for the **ASUS ROG STRIX Z490-E GAMING** motherboard with an Intel® Core™ i9-10900K. 
 <br>
@@ -41,7 +41,7 @@ You can also use [this template](https://github.com/Coopydood/OpenCore-Writeup-T
 
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=150 width=2 />
 
-<h3>UEFI BIOS Utility<br><sub>Version 3001 (19/02/2024)</sub></h3>
+<h3>UEFI BIOS Utility<br><sub>Version 3201 (20/11/2024)</sub></h3>
 
 These are the BIOS settings used with this Hackintosh setup.
 
@@ -67,7 +67,7 @@ These are the BIOS settings used with this Hackintosh setup.
 
 <img align="left" width="100" height="100" src="https://dortania.github.io/docs/latest/Logos/Logo.png">
 <img align="left" src="https://github.com/Coopydood/ultimate-macOS-KVM/assets/39441479/8f69f9b9-cf23-4e8b-adf3-95862a23e2ba" height=100 width=2 />
-<h3>OpenCore<br><sub>1.0.2</sub></h3>
+<h3>OpenCore<br><sub>1.0.4</sub></h3>
 
 This is the version of OpenCore used, including bundled files. The included ``config.plist`` targets this version.
 <br>
